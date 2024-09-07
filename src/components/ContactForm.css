@@ -1,0 +1,97 @@
+/* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* General form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form title */
+  h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Styling for labels */
+  form label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Input field styling */
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Focus state for input fields */
+  form input[type="text"]:focus,
+  form input[type="email"]:focus,
+  form input[type="tel"]:focus {
+    outline: none;
+    border-color: #888;
+  }
+  
+  /* Submit button styling */
+  form button[type="submit"] {
+    padding: 12px 20px;
+    background-color: pink; /* Pink background for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover effect on submit button */
+  form button[type="submit"]:hover {
+    background-color: hotpink; /* Darker pink on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 480px) {
+    form {
+      padding: 20px;
+      max-width: 100%;
+    }
+  
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"] {
+      padding: 10px;
+    }
+  
+    form button[type="submit"] {
+      padding: 10px;
+    }
+  }
+  
