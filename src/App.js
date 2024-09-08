@@ -41,7 +41,9 @@ const Navbar = () => (
         <Link to="/contact">Contact Us</Link>
       </li>
       <li>
-        <a href="/about">About</a>
+        <a href="/about" onClick={(e) => e.preventDefault()}>
+          About
+        </a>
       </li>
     </ul>
   </nav>
